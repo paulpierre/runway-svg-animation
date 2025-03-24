@@ -35,7 +35,7 @@ GitHub will show commands to push an existing repository. Use the commands:
 
 ```bash
 # Add the remote repository
-git remote add origin https://github.com/yourusername/runway-path.git
+git remote add origin https://github.com/paulpierre/runway-svg-animation
 
 # Push to GitHub
 git push -u origin main

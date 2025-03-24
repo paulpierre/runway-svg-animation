@@ -77,7 +77,7 @@ To deploy this demo on GitHub Pages:
 4. Select your main branch as the source
 5. Click "Save"
 
-Your site will be published at `https://yourusername.github.io/repository-name/`
+Your site will be published at `https://github.com/paulpierre/runway-svg-animation/`
 
 ### Local Development
 
