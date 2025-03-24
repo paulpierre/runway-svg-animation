@@ -4,11 +4,15 @@
 
 I came across [Runway.com's website](https://www.runway.com/) and was captivated by their beautiful scroll-triggered SVG path animations. The way the paths drew in as you scrolled through the page created a compelling visual narrative. I noticed they were using GSAP for these animations, but as an Anime.js enthusiast, I wondered: could I recreate this effect using Anime.js?
 
+![Original Runway.com Animation](runway-scroll.gif)
+
 This project is the result of that challenge - a perfect recreation of Runway's path animation system using Anime.js instead of GSAP.
 
 ## Live Demo
 
 Check out the [live demo on GitHub Pages](https://paulpierre.github.io/runway-svg-animation/animejs-demo)!
+
+![Anime.js Implementation](demo.gif)
 
 ## How It Works
 
