@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SVG Path Animation with Anime.js - A recreation of Runway.com's path animations">
+    <title>SVG Path Animation with Anime.js</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-top: 2rem;
+        }
+
+        .demo-container {
+            margin: 3rem 0;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .demo-header {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .demo-content {
+            height: 600px;
+            position: relative;
+        }
+
+        .demo-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .button {
+            display: inline-block;
+            background: #F9A600;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #DD8411;
+        }
+
+        .code {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: #777;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>SVG Path Animation with Anime.js</h1>
+            <p>A perfect recreation of Runway.com's path animation system using Anime.js instead of GSAP.</p>
+            <div>
+                <a href="https://github.com/paulpierre/runway-svg-animation" class="button">View on GitHub</a>
+                <a href="animejs-demo/index.html" class="button">Full Screen Demo</a>
+            </div>
+        </header>
+
+        <h2 id="demo">Demo</h2>
+        <div class="demo-container">
+            <div class="demo-header">
+                <h3>SVG Path Animation - Scroll to see the effect</h3>
+            </div>
+            <div class="demo-content">
+                <iframe src="animejs-demo/index.html" class="demo-frame" title="SVG Path Animation Demo"></iframe>
+            </div>
+        </div>
+
+        <h2>The Challenge</h2>
+        <p>I came across Runway.com's website and was captivated by their beautiful scroll-triggered SVG path
+            animations. The way the paths drew in as you scrolled through the page created a compelling visual
+            narrative. I noticed they were using GSAP for these animations, but as an Anime.js enthusiast, I wondered:
+            could I recreate this effect using Anime.js?</p>
+
+        <h2>How It Works</h2>
+        <h3>Core Principles</h3>
+        <ul>
+            <li><strong>Outside-In Drawing</strong>: Paths start from the outer edges and converge toward the center as
+                you scroll</li>
+            <li><strong>Top-to-Bottom Flow</strong>: The animation progresses naturally from top to bottom as you scroll
+                down the page</li>
+            <li><strong>Initial Progress</strong>: Paths start partially drawn to immediately engage visitors</li>
+            <li><strong>Multi-Stage Animation</strong>: The longest path animates in segments with different timing to
+                create visual interest</li>
+            <li><strong>Checkpoint Indicators</strong>: Animated checkmarks appear at key points along the journey</li>
+        </ul>
+
+        <h3>Customizable Parameters</h3>
+        <p>You can easily modify these parameters at the top of the script:</p>
+        <pre class="code">// Define initial progress for each path (0 to 1)
+const initialProgress = {
+  path0: 0.2, // Starting progress for path 0 (right branch)
+  path1: 0.3, // Starting progress for path 1 (left branch)
+  path2: 0.25, // Starting progress for path 2 (bottom branch)
+};</pre>
+
+        <h2>Usage</h2>
+        <ol>
+            <li>Include Anime.js in your project:
+                <pre
+                    class="code">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"&gt;&lt;/script&gt;</pre>
+            </li>
+            <li>Set up your HTML with the SVG structure (see <code>index.html</code>)</li>
+            <li>Add the CSS styles (see <code>style.css</code>)</li>
+            <li>Include the JavaScript (see <code>script.js</code>)</li>
+        </ol>
+
+        <div class="footer">
+            <p>Created by <a href="https://github.com/paulpierre">Paul Pierre</a> | <a
+                    href="https://github.com/paulpierre/runway-svg-animation/blob/main/LICENSE">MIT License</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

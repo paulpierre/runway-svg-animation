@@ -85,7 +85,7 @@ To run this project locally:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/runway-path.git
+   git clone https://github.com/paulpierre/runway-svg-animation/animejs-demo
    ```
 
 2. Navigate to the project folder:
