@@ -62,7 +62,7 @@ git push -u origin main
 4. Under "Source", select "main" branch
 5. Click "Save"
 
-GitHub will provide a URL where your site is published (usually https://yourusername.github.io/runway-path/).
+GitHub will provide a URL where your site is published (usually https://paulpierre.github.io/runway-svg-animation/animejs-demo).
 
 ## Step 5: Update Links (Optional)
 

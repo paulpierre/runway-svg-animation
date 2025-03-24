@@ -8,7 +8,7 @@ This project is the result of that challenge - a perfect recreation of Runway's 
 
 ## Live Demo
 
-Check out the [live demo on GitHub Pages](https://yourusername.github.io/runway-path/)!
+Check out the [live demo on GitHub Pages](https://paulpierre.github.io/runway-svg-animation/animejs-demo)!
 
 ## How It Works
 
